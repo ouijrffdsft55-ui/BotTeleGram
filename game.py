@@ -45,9 +45,9 @@ def breakthrough(player):
     new_exp = exp - needed
     new_max_hp = player[7] + 20
     new_atk = player[8] + 5
-    new_def = player[9] + 3
+    new_defense = player[9] + 3
 
-    return True, new_level, new_exp, new_max_hp, new_atk, new_def
+    return True, new_level, new_exp, new_max_hp, new_atk, new_defense
 
 
 def meditate(player):
