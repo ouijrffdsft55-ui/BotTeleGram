@@ -97,12 +97,12 @@ async def dot_pha(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
         await update.message.reply_text(res[0], parse_mode="Markdown")
         return
 
-    new_level, new_exp, new_max_hp, new_atk, new_def = res
+    new_level, new_exp, new_max_hp, new_atk, new_defense = res
     update_player(
         user.id,
         level=new_level, exp=new_exp,
         max_hp=new_max_hp, hp=new_max_hp,
-        atk=new_atk, def=new_def
+        atk=new_atk, defense=new_defense
     )
 
     await update.message.reply_text(
